@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Matches from "@/components/Matches";
-import News from "@/components/News";
+import Cases from "@/components/Cases";
+import Inventory from "@/components/Inventory";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -9,8 +9,8 @@ const Index = () => {
     <div className="min-h-screen bg-slate-900">
       <Header />
       <Hero />
-      <Matches />
-      <News />
+      <Cases />
+      <Inventory />
       <Footer />
     </div>
   );

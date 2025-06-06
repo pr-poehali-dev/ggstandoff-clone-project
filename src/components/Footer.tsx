@@ -8,18 +8,20 @@ const Footer = () => {
       { name: "Как это работает", href: "#" },
       { name: "API для разработчиков", href: "#" },
       { name: "Партнерство", href: "#" },
+      { name: "Условия использования", href: "#" },
+      { name: "Политика конфиденциальности", href: "#" },
     ],
     games: [
-      { name: "Counter-Strike", href: "#" },
-      { name: "Valorant", href: "#" },
-      { name: "Dota 2", href: "#" },
-      { name: "League of Legends", href: "#" },
+      { name: "CS:GO кейсы", href: "#" },
+      { name: "Dota 2 предметы", href: "#" },
+      { name: "Rust скины", href: "#" },
+      { name: "TF2 шляпы", href: "#" },
     ],
     community: [
       { name: "Discord сервер", href: "#" },
-      { name: "Форум", href: "#" },
-      { name: "Поддержка", href: "#" },
-      { name: "Обратная связь", href: "#" },
+      { name: "Телеграм канал", href: "#" },
+      { name: "Поддержка 24/7", href: "#" },
+      { name: "Отзывы", href: "#" },
     ],
   };
 
@@ -40,11 +42,11 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
                 <Icon name="Gamepad2" size={20} className="text-white" />
               </div>
-              <span className="text-xl font-bold text-white">GameStandoff</span>
+              <span className="text-xl font-bold text-white">CaseStandoff</span>
             </div>
             <p className="text-slate-400 mb-6 max-w-md">
-              Ведущая платформа для киберспорта. Следите за матчами, турнирами и
-              будьте в курсе всех событий игровой индустрии.
+              Лучшая платформа для открытия кейсов CS:GO. Честная игра, быстрые
+              выплаты и лучшие шансы на редкие скины.
             </p>
 
             {/* Social Links */}
@@ -146,7 +148,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-slate-800 pt-6 mt-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-            <div>© 2024 GameStandoff. Все права защищены.</div>
+            <div>© 2024 CaseStandoff. Все права защищены.</div>
             <div className="flex gap-6">
               <a href="#" className="hover:text-white transition-colors">
                 Политика конфиденциальности

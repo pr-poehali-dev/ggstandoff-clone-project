@@ -20,34 +20,52 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-              <Icon name="Gamepad2" size={20} className="text-white" />
+            <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
+              <Icon name="Package" size={20} className="text-white" />
             </div>
-            <span className="text-xl font-bold text-white">GameStandoff</span>
+            <span className="text-xl font-bold text-white">CaseStandoff</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-slate-300 hover:text-white transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </a>
-            ))}
+            <a
+              href="#"
+              className="text-slate-300 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Кейсы
+            </a>
+            <a
+              href="#inventory"
+              className="text-slate-300 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Инвентарь
+            </a>
+            <a
+              href="#"
+              className="text-slate-300 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Рулетка
+            </a>
+            <a
+              href="#"
+              className="text-slate-300 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Магазин
+            </a>
+            <a
+              href="#"
+              className="text-slate-300 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Пополнить
+            </a>
           </nav>
 
-          {/* Action Buttons */}
+          {/* Balance & Actions */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-slate-300 hover:text-white"
-            >
-              <Icon name="Search" size={18} />
-            </Button>
+            <div className="bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 flex items-center space-x-2">
+              <Icon name="Coins" size={16} className="text-yellow-500" />
+              <span className="text-white font-semibold">1,250₽</span>
+            </div>
             <Button
               variant="ghost"
               size="sm"
@@ -55,8 +73,9 @@ const Header = () => {
             >
               <Icon name="Bell" size={18} />
             </Button>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white">
-              Войти
+            <Button className="bg-orange-600 hover:bg-orange-700 text-white">
+              <Icon name="User" size={16} className="mr-1" />
+              Профиль
             </Button>
           </div>
 
